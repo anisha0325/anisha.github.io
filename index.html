@@ -43,11 +43,27 @@
             align-items: flex-start;
         }
 
-        .content img {
-            max-width: 150px;
+        .profile {
+            max-width: 200px;
+            margin-right: 40px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 100%;
             height: auto;
-            border-radius: 50%;
-            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .profile .name {
+            margin: 10px 0 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .profile .bio {
+            font-size: 14px;
+            color: #666;
         }
 
         .write-up {
@@ -56,10 +72,8 @@
         }
 
         .icons {
-            width: 150px;
             margin-top: 10px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
         }
@@ -67,7 +81,7 @@
         .icons img {
             width: 40px;
             height: 40px;
-            margin: 5px;
+            margin: 0 5px;
         }
     </style>
 </head>
@@ -82,8 +96,10 @@
     </header>
 
     <div class="content">
-        <div>
+        <div class="profile">
             <img src="your_picture.jpg" alt="Your Picture">
+            <div class="name">Anisha Saha</div>
+            <div class="bio">Data Scientist | Machine Learning Enthusiast</div>
             <div class="icons">
                 <a href="mailto:anisha0325@gmail.com" title="Email"><img src="email_icon.png" alt="Email"></a>
                 <a href="https://www.linkedin.com/in/anisha0398/" title="LinkedIn" target="_blank"><img src="linkedin_icon.png" alt="LinkedIn"></a>

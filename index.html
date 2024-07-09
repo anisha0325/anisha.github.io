@@ -19,15 +19,8 @@
             color: #333;
             padding: 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
-        }
-
-        header h1 {
-            margin: 0;
-            cursor: pointer;
-            font-family: 'Lucida Sans', sans-serif;
-            font-weight: normal;
         }
 
         nav {
@@ -41,71 +34,64 @@
             margin: 0 5px;
         }
 
-        section {
+        .content {
+            display: flex;
+            flex-wrap: wrap;
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
         }
 
-        section img {
-            max-width: 30%;
+        .content img {
+            max-width: 150px;
             height: auto;
             border-radius: 50%;
             margin-right: 20px;
         }
 
         .write-up {
-            max-width: 60%;
+            flex: 1;
             text-align: left;
         }
 
         .icons {
-            width: 100%;
+            width: 150px;
             margin-top: 10px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
         }
 
         .icons img {
-            width: 80px; /* Adjusted size for small icons */
-            height: 30px;
-            margin: 0 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 onclick="location.href='index.html';">Anisha Saha</h1>
         <nav>
             <a href="research.html">Research</a>
             <a href="projects.html">Projects</a>
-            <a href="highlights.html">Highlights</a>
             <a href="a-space.html">A-Space</a>
         </nav>
     </header>
 
-    <section>
-        <img src="your_picture.jpg" alt="Your Picture">
+    <div class="content">
+        <div>
+            <img src="your_picture.jpg" alt="Your Picture">
+            <div class="icons">
+                <a href="mailto:anisha0325@gmail.com" title="Email"><img src="email_icon.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/anisha0398/" title="LinkedIn" target="_blank"><img src="linkedin_icon.png" alt="LinkedIn"></a>
+                <a href="https://scholar.google.com/citations?user=bqVlnUMAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="google_scholar_icon.png" alt="Google Scholar"></a>
+                <a href="your-cv.pdf" title="Curriculum Vitae" target="_blank"><img src="cv_icon.png" alt="CV"></a>
+                <a href="https://github.com/anisha0325" title="GitHub" target="_blank"><img src="github_icon.png" alt="GitHub"></a>
+            </div>
+        </div>
         <div class="write-up">
             <h2 style="font-family: 'Lucida Calligraphy', cursive;">About Me</h2>
             <p>I'm a Data Scientist, leveraging my expertise in the industry to push the boundaries of technology,
@@ -121,18 +107,7 @@
             <h2 style="font-family: 'Lucida Calligraphy', cursive;">News</h2>
             <p>Latest updates and news will go here.</p>
         </div>
-        <div class="icons">
-            <a href="mailto:anisha0325@gmail.com" title="Email"><img src="email_icon.png" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/anisha0398/" title="LinkedIn" target="_blank"><img src="linkedin_icon.png" alt="LinkedIn"></a>
-            <a href="https://scholar.google.com/citations?user=bqVlnUMAAAAJ&hl=en" title="Google Scholar" target="_blank"><img src="google_scholar_icon.png" alt="Google Scholar"></a>
-            <a href="your-cv.pdf" title="Curriculum Vitae" target="_blank"><img src="cv_icon.png" alt="CV"></a>
-            <a href="https://github.com/anisha0325" title="GitHub" target="_blank"><img src="github_icon.png" alt="GitHub"></a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Anisha Saha. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 
 </html>
